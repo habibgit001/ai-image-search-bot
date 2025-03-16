@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Companion & Image Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🤖 AI Companion & Image Search 📸</h1>
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <textarea id="message" placeholder="Type your message..."></textarea>
+            <div class="btn-group">
+                <button class="btn" onclick="sendMessage()">Send Message</button>
+                <button class="btn secondary" onclick="newChat()">New Chat</button>
+            </div>
+            <div id="response" class="response-box"></div>
+        </div>
+
+        <!-- Image Search Section -->
+        <div class="image-section">
+            <textarea id="imageQuery" placeholder="Search for images..."></textarea>
+            <div class="btn-group">
+                <button class="btn" onclick="searchImages()">Search Images</button>
+                <button class="btn secondary" onclick="newImages()">New Images</button>
+            </div>
+            <div id="loading" class="loading hidden"></div>
+            <div id="imageResults" class="image-grid"></div>
+            <button id="loadMore" class="btn hidden" onclick="loadMoreImages()">Load More</button>
+        </div>
+    </div>
+</body>
+</html>
